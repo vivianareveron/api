@@ -101,8 +101,9 @@ body{
 
 
 .nightmist {
-
-     background-image: url(http://www.blogto.com/upload/2012/03/2012319-night-fog-ddotg.jpg);
+    
+    animation: 
+    background-image: url(http://www.blogto.com/upload/2012/03/2012319-night-fog-ddotg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #4D99F0;
@@ -110,7 +111,7 @@ body{
 
 
 .dayhaze {
-
+    
       background-image: url(http://icons.wunderground.com/data/wximagenew/y/Yamson/9.jpg);
       background-repeat: no-repeat;
     background-size: cover;
@@ -131,6 +132,7 @@ body{
 #location {
 text-align: center;
 padding: 5% 25%;
+background-color: rgba(0,0,0,0.3);    
     
 
 }
