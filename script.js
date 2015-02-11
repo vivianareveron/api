@@ -15,8 +15,7 @@ window.onload = getMyLocation;
         }
 
     }
-
-
+    
 
     function createUrl (position){
         
@@ -29,80 +28,78 @@ window.onload = getMyLocation;
             
             var temp = Math.round(data.main.temp - 273.14);
             var info = "<ul>";
-            info += "<li>";
-            info += "<h2>" + data.name + "</h2>";
-            info += "<p>" + data.weather[0].description + "</p>";
-            info += "<h1>" + temp + "° C</h1>";
-            info += "<p> Humidity: " + data.main.humidity + "%</p>";
-            info += "<p> Wind speed: " + data.wind.speed + "m/s</p>";
-            info += "</li>";				
+            
+            info += "<li><h2>" + data.name + "</h2></li>";
+            info += "<li><p>" + data.weather[0].description + "</p></li>";
+            info += "<li><h1>" + temp + "° C</h1></li>";
+            info += "<li><p> Humidity: " + data.main.humidity + "%</p></li>";
+            info += "<li><p> Wind speed: " + data.wind.speed + "m/s</p></li>";				
 			info += "</ul>";
 			
 			$('#location').html(info);
-            
        
-            if(data.weather[0].main == "Clear" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            if(data.weather[0].main == "Clear" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("dayclear");
             
             
-            } else if (data.weather[0].main == "Clear" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)) {
+            } else if (data.weather[0].main == "Clear" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)) {
                 
                $("body").addClass("nightclear");
             
             
-            }  else if(data.weather[0].main == "Clouds" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            }  else if(data.weather[0].main == "Clouds" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("daycloudy");
             
             
-            } else if (data.weather[0].main == "Clouds" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)){
+            } else if (data.weather[0].main == "Clouds" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)){
                 
                $("body").addClass("nightcloudy");
             
-            }  else if(data.weather[0].main == "Rain" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            }  else if(data.weather[0].main == "Rain" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("dayrainy");
             
             
-            } else if (data.weather[0].main == "Rain" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)) {
+            } else if (data.weather[0].main == "Rain" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)) {
                 
                $("body").addClass("nightrainy");
             
-            }  else if(data.weather[0].main == "Snow" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            }  else if(data.weather[0].main == "Snow" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("daysnowy");
             
             
-            } else if (data.weather[0].main == "Snow" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)) {
+            } else if (data.weather[0].main == "Snow" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)) {
                 
                $("body").addClass("nightsnowy");
             
-            }  else if(data.weather[0].main == "Fog" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            }  else if(data.weather[0].main == "Fog" && $.now() > $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("dayfog");
             
             
-            } else if (data.weather[0].main == "Fog" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)) {
+            } else if (data.weather[0].main == "Fog" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)) {
                 
                $("body").addClass("nightfog");
             
             
-            } else if(data.weather[0].main == "Mist" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            } else if(data.weather[0].main == "Mist" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("daymist");
             
             
-            } else if (data.weather[0].main == "Mist" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)) {
+            } else if (data.weather[0].main == "Mist" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)) {
                 
                $("body").addClass("nightmist");
             
-            } else if(data.weather[0].main == "Haze" && $.now() > data.sys.sunrise && $.now() < data.sys.sunset) {
+            } else if(data.weather[0].main == "Haze" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
                $("body").addClass("dayhaze");
             
             
-            } else if (data.weather[0].main == "Haze" && ($.now() > data.sys.sunrise || $.now() > data.sys.sunset)) {
+            } else if (data.weather[0].main == "Haze" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)) {
                 
                $("body").addClass("nighthaze");
             
@@ -113,6 +110,7 @@ window.onload = getMyLocation;
         };
 
         $.getJSON(url, displayInfo);
+        
     }
 
 })
