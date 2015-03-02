@@ -1,6 +1,7 @@
 body{
 
     font-family: 'Lato', sans-serif;
+    background-color: #000;
 
 }
 
@@ -9,7 +10,7 @@ body{
     background-image: url(http://fc06.deviantart.net/fs71/i/2013/122/a/2/clear_day_by_banni_rox-d63uic8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+   
 }
 
 
@@ -18,7 +19,7 @@ body{
     background-image: url(http://www.islay.org.uk/wp-content/uploads/2014/12/night-sky-machir-bay.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+  
 
 }
 
@@ -28,7 +29,7 @@ body{
      background-image: url(http://www.artween.com/var/artween/storage/images/individuals/forrester-ellen/theme/cloudy-day/700883-1-eng-US/Cloudy-Day_reference.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+  
 }
 
 .nigthcloudy {
@@ -36,7 +37,7 @@ body{
       background-image: url(http://media.kids-myshot.nationalgeographic.com/2011/10/4e9b9598ccd4dIMG_2118_large_medium.JPG);
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: #4D99F0;
+     
 }
 
 .dayrainy {
@@ -44,7 +45,7 @@ body{
     background-image: url(http://sites.macewan.ca/inspire/files/2014/06/rainy-day-images-.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+
 }
 
 .nightrainy {
@@ -52,7 +53,7 @@ body{
      background-image: url(http://newtopwallpapers.com/wp-content/uploads/2013/04/A-Rainy-Night-Background-For-Desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+ 
 }
 
 
@@ -61,16 +62,15 @@ body{
       background-image: url(https://writeinpencilonly.files.wordpress.com/2014/01/snowy-day.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: #4D99F0;
-
+     
 }
 
 .nightsnowy {
 
-      background-image: url(http://th02.deviantart.net/fs71/PRE/i/2011/238/7/2/pre_dawn_snow_falling_by_saralyn_shen-d47wy5w.jpg);
+    background-image: url(http://th02.deviantart.net/fs71/PRE/i/2011/238/7/2/pre_dawn_snow_falling_by_saralyn_shen-d47wy5w.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
-    background-color: #4D99F0;
+   
 }
 
 
@@ -79,7 +79,7 @@ body{
       background-image: url(https://girlwithadogandgoodshoes.files.wordpress.com/2013/01/foggy-day-021.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+    
 }
 
 .nightfog {
@@ -87,7 +87,7 @@ body{
       background-image: url(http://www.blogto.com/upload/2012/03/2012319-night-fog-ddotg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+    
 }
 
 
@@ -96,7 +96,7 @@ body{
     background-image: url(https://girlwithadogandgoodshoes.files.wordpress.com/2013/01/foggy-day-021.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+   
 }
 
 
@@ -106,7 +106,7 @@ body{
     background-image: url(http://www.blogto.com/upload/2012/03/2012319-night-fog-ddotg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+    
 }
 
 
@@ -115,7 +115,7 @@ body{
       background-image: url(http://icons.wunderground.com/data/wximagenew/y/Yamson/9.jpg);
       background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+  
 
 }
 
@@ -125,7 +125,7 @@ body{
       background-image: url(http://www.channelnewsasia.com/image/717006/1371652885000/large16x9/768/432/haze-night-afp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4D99F0;
+   
 }
 
 

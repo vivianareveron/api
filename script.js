@@ -55,7 +55,7 @@ window.onload = getMyLocation;
             
             } else if (data.weather[0].main == "Clouds" && ($.now()/1000 < data.sys.sunrise || $.now()/1000 > data.sys.sunset)){
                 
-               $("body").addClass("nightcloudy");
+               $("body").addClass("nigthcloudy");
             
             }  else if(data.weather[0].main == "Rain" && $.now()/1000 > data.sys.sunrise && $.now()/1000 < data.sys.sunset) {
                 
